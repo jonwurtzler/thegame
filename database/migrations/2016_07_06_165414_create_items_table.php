@@ -14,11 +14,9 @@ class CreateItemsTable extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('item_api_id', 40);
             $table->string('name');
             $table->string('description');
             $table->integer('rarity');
-            $table->boolean('used')->default(false);
             $table->string('case');
             $table->timestamps();
         });
