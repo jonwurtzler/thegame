@@ -39,6 +39,12 @@
   - Rarity: 2
   - Effect: Tried on self, gained effect 'Moogle'
   
+### Red Crystal
+
+  - Description: You have the power of tornadoes! Take that Deborah Cliff.
+  - Rarity: 3
+  - Effect: Tried on self, no points gained.  Try on attack next.  May have gotten 'Simon's Quest' Badge from it.
+  
 ### Red Shell
   
   - Description: Toss ahead of you to unsuspecting victim.
