@@ -264,6 +264,13 @@ class ItemsTableSeeder extends Seeder
       ]);
 
       $this->item->create([
+        'name'        => 'Varia Suit',
+        'description' => 'Sleek pant suit offering significant protection from foes.',
+        'rarity'      => '3',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
         'name'        => 'Warthog',
         'description' => 'Recon vehicle that temporarily increases speed.',
         'rarity'      => '2',
