@@ -47,6 +47,13 @@ class ItemsTableSeeder extends Seeder
       ]);
 
       $this->item->create([
+        'name'        => 'Box of Bees',
+        'description' => 'The Brian Bell Legacy.',
+        'rarity'      => '3',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
         'name'        => 'Buffalo',
         'description' => 'Absolutely not dying from dysentery today!',
         'rarity'      => '2',
@@ -54,8 +61,22 @@ class ItemsTableSeeder extends Seeder
       ]);
 
       $this->item->create([
+        'name'        => 'Buster Sword',
+        'description' => 'Save Aeris!! ... too soon?',
+        'rarity'      => '3',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
         'name'        => 'Cardboard Box',
         'description' => 'Shhh. You can\'t see me.',
+        'rarity'      => '2',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
+        'name'        => 'Charizard',
+        'description' => 'It\'s hard to be a diamond in a rhinestone world.',
         'rarity'      => '2',
         'case'        => 'Some'
       ]);
@@ -82,9 +103,23 @@ class ItemsTableSeeder extends Seeder
       ]);
 
       $this->item->create([
+        'name'        => 'Fus Ro Dah',
+        'description' => 'Dragon shout that silences the target.',
+        'rarity'      => '3',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
         'name'        => 'Gold Ring',
         'description' => 'Shiny ring that provides temporary protection from damage.',
         'rarity'      => '2',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
+        'name'        => 'Golden Gun',
+        'description' => 'Francisco Scaramanga\'s weapon of choice.',
+        'rarity'      => '3',
         'case'        => 'Some'
       ]);
 
@@ -96,8 +131,22 @@ class ItemsTableSeeder extends Seeder
       ]);
 
       $this->item->create([
+        'name'        => 'Hadouken',
+        'description' => 'Burst of energy that pulses through the target and results in temporary after shocks.',
+        'rarity'      => '2',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
         'name'        => 'Hard Knuckle',
         'description' => 'Mega Man face punch.',
+        'rarity'      => '2',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
+        'name'        => 'Holy Water',
+        'description' => 'Throw at the floor to release temporary holy flames.',
         'rarity'      => '2',
         'case'        => 'Some'
       ]);
@@ -110,10 +159,24 @@ class ItemsTableSeeder extends Seeder
       ]);
 
       $this->item->create([
+        'name'        => 'Master Sword',
+        'description' => 'It\'s dangerous to go alone!',
+        'rarity'      => '3',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
+        'name'        => 'Miniature Giant Space Hamster',
+        'description' => 'Boo is always judging!',
+        'rarity'      => '3',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
         'name'        => 'Moogle',
-        'description' => '',
+        'description' => 'Kupo! Your luck is temporarily increased.',
         'rarity'      => '2',
-        'case'        => ''
+        'case'        => 'Some'
       ]);
 
       $this->item->create([
@@ -124,10 +187,31 @@ class ItemsTableSeeder extends Seeder
       ]);
 
       $this->item->create([
+        'name'        => 'Pandora\'s Box',
+        'description' => 'What\'s in here? OH NOES!',
+        'rarity'      => '3',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
         'name'        => 'Pizza',
-        'description' => '',
-        'rarity'      => '',
-        'case'        => ''
+        'description' => 'Michelangelo\'s favorite food, dude.',
+        'rarity'      => '1',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
+        'name'        => 'Pokeball',
+        'description' => 'Gotta catch \'em all!',
+        'rarity'      => '2',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
+        'name'        => 'Pony',
+        'description' => 'You are a casual gaming princess! Now harvest those crops, your majesty.',
+        'rarity'      => '3',
+        'case'        => 'Some'
       ]);
 
       $this->item->create([
@@ -152,6 +236,20 @@ class ItemsTableSeeder extends Seeder
       ]);
 
       $this->item->create([
+        'name'        => 'SPNKR',
+        'description' => 'Heavy weapon that has questionable aim.',
+        'rarity'      => '3',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
+        'name'        => 'Star',
+        'description' => 'A celestial object that creates temporary invincibility.',
+        'rarity'      => '3',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
         'name'        => 'Tanooki Suit',
         'description' => 'Adorable suit that provides temporary protection from attacks.',
         'rarity'      => '2',
@@ -162,6 +260,13 @@ class ItemsTableSeeder extends Seeder
         'name'        => 'UUDDLRLRBA',
         'description' => 'Konami Code always gives a nice boost.',
         'rarity'      => '1',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
+        'name'        => 'Warthog',
+        'description' => 'Recon vehicle that temporarily increases speed.',
+        'rarity'      => '2',
         'case'        => 'Some'
       ]);
 

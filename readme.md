@@ -34,16 +34,34 @@
   - Description: Shiny ring that provides temporary protection from damage.
   - Rarity: 2
   - Effect: Tried on self, gained 'Gold Ring' effect.
+  
+### Hadouken
+
+  - Description:
+  - Rarity: 3
+  - Effect: Tried on self, gained 'Hadouken' effect.
 
 ### Pizza
   
   - Effect: Tried it on myself, I gained 0 points.
+  
+### Leeroy Jenkins
+
+  - Description:
+  - Rarity: 3
+  - Effect: Tried on self, gained effect 'Leeroy Jenkins'
 
 ### Moogle
 
-  - Description: 
+  - Description: Kupo! Your luck is temporarily increased.
   - Rarity: 2
   - Effect: Tried on self, gained effect 'Moogle'
+  
+## Pony
+
+  - Description: You are a casual gaming princess! Now harvest those crops, your majesty.
+  - Rarity: 3
+  - Effect: Tried on self, gained 0 points.  (Used as an attack?)
   
 ### Red Crystal
 
@@ -87,11 +105,26 @@
 
  - Duration: 3 min
  - Effect: ?? - guessing protection from attacks.  One ring, so all attacks?
+ 
+### Leeroy Jenkins
+
+ - Duration: 15 min
+ - Type: Attack
+ - Effect: ??
+ - Message: LEEEEEROOOOY JENKINS!!!!!
+ 
+### Hadouken
+
+  - Duration:
+  - Type:
+  - Effect: ??
+  - Message:
 
 ### Moogle
 
  - Duration: 30min
  - Effect: May gain 1 or 3 points when gathering points.
+ - Message: Kupo!
  
 ### Rush the Dog
 
@@ -103,7 +136,22 @@
  - duration: 3 attacks
  - effect: protection from attacks
  
+### Warthog
+
+ - Duration: 15 min
+ - Effect: Double gains
+ 
 ## Violations
+
+### Dysentery
+
+  - Duration: Instant
+  - Effect: ??
+
+### Fear
+  
+  - Duration: Instant
+  - Effect: Lost 10 points
  
 ### Poison
  
@@ -140,3 +188,7 @@
   - duration: 15 min
   - effect: half points
   
+### Bleeding
+
+  - Duration: 30 min
+  - Effect: ??
