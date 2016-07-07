@@ -4,6 +4,12 @@
 - May only use one item per minute.  Any more will cause a negative effect to be applied.
 
 ## Items
+  
+### Biggs
+
+  - Description: Red Wing soldier that bolsters your confidence.
+  - Rarity: 1
+  - Effect: Tried on self, gained 50 points.
 
 ### Bo Jackson
 
@@ -11,11 +17,11 @@
   - Rarity: 1
   - Effect: Tried on self, gained 7 points.
   
-### Biggs
+### Buffalo
 
-  - Description: Red Wing soldier that bolsters your confidence.
-  - Rarity: 1
-  - Effect: Tried on self, gained 50 points.
+  - Description: Absolutely not dying from dysentery today!
+  - Rarity: 2
+  - Effect Tried on self, gained 100 points.
   
 ### Fire Flower
 
