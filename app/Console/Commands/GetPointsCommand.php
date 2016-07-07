@@ -9,7 +9,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 class GetPointsCommand extends Command
 {
     use DispatchesJobs;
-  
+
     /**
      * The name and signature of the console command.
      *
@@ -41,6 +41,10 @@ class GetPointsCommand extends Command
      */
     public function handle()
     {
-        $this->dispatch(new GetPointsJob());
+        $getPoints = (new GetPointsJob())->onQueue('points')->delay(1);
+
+        for($v = 0; $v < 30; $v++) {
+            $this->dispatch($getPoints);
+        }
     }
 }

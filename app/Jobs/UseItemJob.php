@@ -40,7 +40,6 @@ class UseItemJob extends Job implements ShouldQueue
      */
     public function handle(GameRepository $repository)
     {
-        sleep(2);
         $repository->useItem($this->itemId, $this->target);
     }
 }

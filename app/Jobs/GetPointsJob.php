@@ -19,12 +19,6 @@ class GetPointsJob extends Job implements ShouldQueue
      */
     public function handle(GameRepository $repository)
     {
-        for($v = 0; $v < 15; $v++) {
-          sleep(2);
-          $repository->getPoints();
-          sleep(1);
-        }
-
-        sleep(1);
+        $repository->getPoints();
     }
 }
