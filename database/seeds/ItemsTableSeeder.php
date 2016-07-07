@@ -145,6 +145,13 @@ class ItemsTableSeeder extends Seeder
       ]);
 
       $this->item->create([
+        'name'        => 'Rush the Dog',
+        'description' => 'Loyal canine sidekick that can boost a hero\'s spirit.',
+        'rarity'      => '3',
+        'case'        => 'Some'
+      ]);
+
+      $this->item->create([
         'name'        => 'Tanooki Suit',
         'description' => 'Adorable suit that provides temporary protection from attacks.',
         'rarity'      => '2',

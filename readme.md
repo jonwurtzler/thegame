@@ -57,6 +57,12 @@
   - Rarity: 1
   - Effect: ?? Guessing hits the person ahead of you for dmg.
   
+### Rush the Dog
+
+  - Description: Loyal canine sidekick that can boost a hero\'s spirit.
+  - Rarity: 3
+  - Effect: Tried on self, gained 'Rush the Dog' effect
+  
 ### Tanooki Suit
 
   - Description:
@@ -84,8 +90,13 @@
 
 ### Moogle
 
- - duration: 30min
- - effect: may gain 1 or 3 points when gathering points
+ - Duration: 30min
+ - Effect: May gain 1 or 3 points when gathering points.
+ 
+### Rush the Dog
+
+ - Duration: 1 hour
+ - Effect: May gain 1 or 10 points when gathering points.
  
 ### Tanooki Suit
  
