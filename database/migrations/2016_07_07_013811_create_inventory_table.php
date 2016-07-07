@@ -14,7 +14,7 @@ class CreateInventoryTable extends Migration
     {
       Schema::create('inventory', function (Blueprint $table) {
         $table->increments('id');
-        $table->integer('api_item_id');
+        $table->string('api_item_id');
         $table->integer('item_id');
         $table->boolean('used')->default(false);
         $table->timestamps();
