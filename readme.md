@@ -40,10 +40,12 @@
   - Description:
   - Rarity: 3
   - Effect: Tried on self, gained 'Hadouken' effect.
-
-### Pizza
   
-  - Effect: Tried it on myself, I gained 0 points.
+### Holy Water
+
+  - Description: Throw at the floor to release temporary holy flames.
+  - Rarity: 2
+  - Effect: Tried on self, gained 'Holy Water' effect.
   
 ### Leeroy Jenkins
 
@@ -56,6 +58,16 @@
   - Description: Kupo! Your luck is temporarily increased.
   - Rarity: 2
   - Effect: Tried on self, gained effect 'Moogle'
+  
+### Pandora's Box
+
+  - Description: What's in here? OH NOES!
+  - Rarity: 3
+  - Effect: Tried on self, it's an attack.
+
+### Pizza
+  
+  - Effect: Tried it on myself, I gained 0 points.
   
 ## Pony
 
@@ -119,6 +131,12 @@
   - Type:
   - Effect: ??
   - Message:
+  
+## Holy Water
+
+  - Duration: instant
+  - Type: Attack
+  - Effect: Burns away 10 points for some time.
 
 ### Moogle
 
@@ -182,6 +200,11 @@
   
   - duration: 5 min
   - effect: ??
+  
+### Scope Creep
+
+  - Duration: 1 hour
+  - Effect: nothing good.
   
 ### Slow
 
