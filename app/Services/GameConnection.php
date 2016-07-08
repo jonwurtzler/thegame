@@ -31,14 +31,12 @@ class GameConnection
   {
     $this->basicClient = new GuzzleClient([
       'base_uri' => $this->baseUri,
-      'connect_timeout' => 1,
       'headers'  => ['accept' => 'application/json'],
     ]);
     
     $this->apikey = env('GAME_API_KEY');
     $this->authClient = new GuzzleClient([
       'base_uri' => $this->baseUri,
-      'connect_timeout' => 1,
       'headers'  => [
         'accept' => 'application/json',
         'apikey' => $this->apikey,
