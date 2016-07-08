@@ -43,10 +43,9 @@ class UseItemCommand extends Command
      */
     public function handle()
     {
-        $useItemJob = (new UseItemJob($this->argument('itemId'), $this->argument('target')))
-                        ->onQueue('items')
-                        ->delay(1);
+        $useItemJob = (new UseItemJob($this->argument('itemId'), $this->argument('target')))->onQueue('items');
         
+        sleep(1);
         $this->dispatch($useItemJob);
     }
 }
