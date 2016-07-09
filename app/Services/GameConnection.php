@@ -15,7 +15,7 @@ class GameConnection
   /**
    * @var string
    */
-  private $baseUri = "http://thegame.nerderylabs.com";
+  private $baseUri = "http://thegame.nerderylabs.com:1337";
 
   /**
    * @var GuzzleClient
