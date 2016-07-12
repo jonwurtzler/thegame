@@ -13,14 +13,17 @@ class GameRepository
     /**
      * @var GameConnection
      */
-    private $connection;
+    protected $connection;
+
+    /**
+     * @var Log
+     */
+    protected $logger;
 
     /**
      * @var Item
      */
-    private $item;
-
-    private $logger;
+    protected $item;
 
     /**
      * GameRepository constructor.
@@ -52,22 +55,6 @@ class GameRepository
         // Make sure to log the output as a just in case.
         $this->logger->info($contents);
 
-    }
-
-    public function useItem($itemId, $target = null)
-    {
-        $client = $this->connection->getAuthConnection();
-        $q = [];
-
-        if (!is_null($target)) {
-            $q = ['query' => ['target' => $target]];
-        }
-
-        $response = $client->post('items/use/' . $itemId, $q);
-        $contents = $response->getBody()->getContents();
-
-        // Make sure to log the output as a just in case.
-        $this->logger->info($contents);
     }
 
     /**

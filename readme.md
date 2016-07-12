@@ -154,6 +154,12 @@
  - duration: 3 attacks
  - effect: protection from attacks
  
+### Varia Suit
+
+ - Duration: 1 hour
+ - Type: Gain
+ - Effect: Double all effects.
+ 
 ### Warthog
 
  - Duration: 15 min

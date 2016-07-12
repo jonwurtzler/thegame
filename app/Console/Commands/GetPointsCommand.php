@@ -41,12 +41,12 @@ class GetPointsCommand extends Command
      */
     public function handle()
     {
-        $getPoints = (new GetPointsJob())->onQueue('points');
+        $getPoints = (new GetPointsJob())->onQueue('points')->delay(2);
 
-        for($v = 0; $v < 16; $v++) {
+        do {
             sleep(2);
             $this->dispatch($getPoints);
             sleep(1);
-        }
+        } while (true);
     }
 }

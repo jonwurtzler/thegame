@@ -2,8 +2,7 @@
 
 namespace App\Jobs;
 
-use App\Jobs\Job;
-use App\Repositories\GameRepository;
+use App\Repositories\ItemRepository;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -38,7 +37,7 @@ class UseItemJob extends Job implements ShouldQueue
      *
      * @return void
      */
-    public function handle(GameRepository $repository)
+    public function handle(ItemRepository $repository)
     {
         $repository->useItem($this->itemId, $this->target);
     }
