@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
          Commands\GetPointsCommand::class,
+         Commands\GetPlayerEffectsCommand::class,
          Commands\UseItemCommand::class,
     ];
 
@@ -25,6 +26,6 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        //$schedule->command('game:points')->everyMinute();
+        $schedule->command('game:effects')->everyMinute();
     }
 }

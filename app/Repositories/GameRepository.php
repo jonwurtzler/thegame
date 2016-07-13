@@ -2,6 +2,7 @@
 
 namespace App\Repositories;
 
+use App\Effect;
 use App\Inventory;
 use App\Item;
 use App\Services\GameConnection;
@@ -16,6 +17,11 @@ class GameRepository
     protected $connection;
 
     /**
+     * @var Effect
+     */
+    protected $effect;
+
+    /**
      * @var Log
      */
     protected $logger;
@@ -26,13 +32,20 @@ class GameRepository
     protected $item;
 
     /**
+     * @var string
+     */
+    protected $player;
+
+    /**
      * GameRepository constructor.
      */
     public function __construct(Log $log)
     {
         $this->connection = new GameConnection();
+        $this->effect = new Effect();
         $this->item = new Item();
         $this->logger = $log;
+        $this->player = env('GAME_PLAYER');
     }
 
 
