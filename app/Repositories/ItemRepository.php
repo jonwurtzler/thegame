@@ -3,10 +3,29 @@
 namespace App\Repositories;
 
 use App\Inventory;
-use Illuminate\Contracts\Logging\Log;
 
 class ItemRepository extends GameRepository
 {
+
+    /**
+     * Look for the next queued item.
+     * 
+     * @return Inventory|null
+     */
+    public function getNextQueuedItem()
+    {
+        return Inventory::queued()->first();
+    }
+
+    /**
+     * @param string $name
+     *
+     * @return Inventory|null
+     */
+    public function getNextItemByName($name)
+    {
+        return Inventory::unusedByItemName($name)->first();
+    }
 
     /**
      * Trigger the use of an item.

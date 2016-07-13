@@ -16,7 +16,7 @@ class Inventory extends Model
     /**
      * @var array
      */
-    protected $fillable = ['api_item_id', 'item_id', 'used'];
+    protected $fillable = ['api_item_id', 'item_id', 'used', 'queued', 'queued_at'];
 
     /*
     | -------------------------------------------------------------------
@@ -48,5 +48,33 @@ class Inventory extends Model
     public function scopeUnused($query)
     {
         return $query->where('used', false);
+    }
+
+    /**
+     * Get unused item by it's name
+     *
+     * @param Builder $query
+     * @param string $name
+     *
+     * @return Builder|static
+     */
+    public function scopeUnusedByItemName($query, $name)
+    {
+        return $this->scopeUnused($query)
+            ->whereHas('item', function($q) use ($name) {
+                $q->where('name', $name);
+            });
+    }
+
+    /**
+     * Scope to get queued items
+     *
+     * @param Builder $query
+     *
+     * @return Builder
+     */
+    public function scopeQueued($query)
+    {
+        return $this->scopeUnused($query)->where('queued', true)->orderBy('queued_at');
     }
 }
