@@ -4,3 +4,14 @@
 Homestead.yaml
 Homestead.json
 .env
+
+# OS X
+#--------------------
+.DS_Store
+._*
+Thumbs.db
+
+# IntelliJ Ignores
+#--------------------
+**/.idea/
+*.iml
