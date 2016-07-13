@@ -40,7 +40,11 @@
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan optimize"
         ],
+        "pre-autoload-dump": [
+          "php artisan clear-compiled"
+        ],
         "post-update-cmd": [
+            "php artisan clear-compiled",
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php artisan optimize"
         ]
