@@ -17,6 +17,7 @@ class FindNextItemJob extends Job implements ShouldQueue
     /**
      * @var array
      *
+     * Jigglypuff = 1000
      * Buffalo = 100
      * Biggs = 50
      * Wedge = 50
@@ -24,7 +25,7 @@ class FindNextItemJob extends Job implements ShouldQueue
      * UUDDLRLRBA = 30
      * Bo Jackson = 7
      */
-    private $instantPointGainItems = ['Buffalo', 'Biggs', 'Wedge', 'Pizza', 'UUDDLRLRBA', 'Bo Jackson'];
+    private $instantPointGainItems = ['Jigglypuff', 'Buffalo', 'Biggs', 'Wedge', 'Pizza', 'UUDDLRLRBA', 'Bo Jackson'];
 
     /**
      * Execute the job.
